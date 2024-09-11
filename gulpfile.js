@@ -11,6 +11,12 @@ function generateCSS(cb) {
 }
 exports.css = generateCSS;
 
+const gulp = require('gulp');
+
+gulp.task('build', function() {
+  // Define build tasks here
+});
+
 function watchFiles(cb) {
   watch("./sass/*.scss", generateCSS);
 }
